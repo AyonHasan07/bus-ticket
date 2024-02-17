@@ -6,8 +6,183 @@
     <title>Bus Ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="w-10/12 mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li> <a href="">About</a> </li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-[#1DD100] bg-[#1DD1001A]">Bus <img src="images/bus-icon.png" alt=""></a>
+                </div>
+              </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with </h1>
+                
+                <h1 class="mb-5 text-4xl font-bold text-[#1DD100]">P Paribahan </h1>
+
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn bg-[#1DD100] text-white">Get Started</button>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <section class="w-10/12 mx-auto my-14 ">
+            <h1 class="text-center text-[#030712] font-bold"> Best offers for you</h1>
+            
+            <div class="relative flex justify-center items-center gap-10 my-8">
+                <!-- 1st coupon -->
+                
+                    <div class=" mx-auto bg-[#FFBF0F] flex justify-center items-center rounded-2xl  w-full  ">
+                        <div class="border-r-2 border-dashed p-8">
+                            <h1 class="text-2xl font-extrabold">15% OFF</h1>
+                            <p class="text-[16px] text-[#030712CC] font-semibold">on your next purchase</p>
+                            <p class="text-sm text-[#03071266] ">use by January 2024</p>
+                        </div>
+                        <div class="p-8">
+                            <h1 class="text-2xl font-extrabold">NEW15</h1>
+                            <p class="text-sm text-[#03071266] ">Coupon Code</p>
+    
+                            
+                        </div>
+                
+
+                         <!-- <div class="circle1"></div>
+                         <div class="circle2"></div> -->
+                    
+
+                    
+                 </div>
+
+                
+
+                <!-- 2nd coupon -->
+                
+                    <div class=" mx-auto bg-[#F78C9C] flex justify-center items-center rounded-2xl  w-full ">
+                        <div class="border-r-2 border-dashed p-8">
+                            <h1 class="text-2xl font-extrabold">20% OFF</h1>
+                            <p class="text-[16px] text-[#030712CC] font-semibold">on your next purchase</p>
+                            <p class="text-sm text-[#03071266] ">use by January 2024</p>
+                        </div>
+                        <div class="p-8">
+                            <h1 class="text-xl font-extrabold">Couple 20</h1>
+                            <p class="text-sm text-[#03071266] ">Coupon Code</p>
+    
+                            
+                        </div>
+                
+
+                       <!-- <div class="circle1"></div>
+                       <div class="circle2"></div> -->
+                   </div>                    
+                
+
+            </div>
+
+            <div class="flex justify-center items-center">
+                <button class=" text-[#1DD100] bg-[#ffffff] border-[#1DD100] border-[1px] rounded px-3 py-2 " >See All Offers</button>
+            </div>
+           
+        </section>
+
+        <section>
+            <div class="w-10/12 mx-auto">
+                <!-- title -->
+                <div class=" my-10">
+                    <h1 class="">P.H Paribahan</h1>
+                <p class="">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
+
+                <!-- ticket -->
+                <div class="flex justify-between items-center">
+                    <!-- bus -->
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-center items-center gap-4">
+                                <!-- Bus Logo -->
+                                <div class="">
+                                    <img src="images/bus-logo.png" alt="">
+                                </div>
+                                <!-- bus Name -->
+                                <div class="">
+                                    <h1 class="">Greenline Paribahan</h1>
+                                    <p class="">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <!-- seats lefts -->
+                            <div class="flex">
+                                <img src="images/seat-green-filled.png" alt="">
+                                <div class="p">40 Seats left</div>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <!-- Route -->
+                            <div class="flex justify-between items-center">
+                                <p class="">Route</p>
+                                <p class="">Dhaka - Sylhet</p>
+                            </div>
+                            <hr>
+                            <!-- Departure Time -->
+                            <div class="flex justify-between items-center">
+                                <p class="">Departure Time</p>
+                                <p class="">9:00 PM</p>
+                            </div>
+                            <hr>
+                            <!-- Boarding Point -->
+                            <div class="flex justify-between items-center">
+                                <p class=""> Boarding Point - Laxmipur</p>
+                                <p class=""> Dropping Point - Bogura</p>
+                                <p class="">Est. Time - 11 Hour</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    
+                    <!-- price -->
+                    <div class=" p-12">
+                        <img src="images/fare.png" alt="">
+                        <h1 class="">550 Taka</h1>
+                        <p class="">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>

@@ -51,7 +51,7 @@
                 <h1 class="mb-5 text-4xl font-bold text-[#1DD100]">Greenline Paribahan </h1>
 
                 <p class="mb-5 inter">Looking for great deals on bus tickets? We'll make it easy for you! Get the lowest prices, and renowned bus operators - all in one place.</p>
-                <button class="btn bg-[#1DD100] text-white">Buy Tickets</button>
+                <button class="btn bg-[#1DD100] text-white" > Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@
 
             <!-- seats and Form -->
 
-            <div class="flex justify-center items-center gap-5 w-10/12 mx-auto bg-[#FFFFFFFF] my-10 p-6">
+            <div id="seatAndForm" class="flex justify-center items-center gap-5 w-10/12 mx-auto bg-[#FFFFFFFF] my-10 p-6">
 
                 <!-- Seats -->
 
@@ -322,15 +322,20 @@
                             </div>
 
                             <!-- coupon -->
-                            <div class="flex justify-between items-center bg-[#FFFFFF]">
-                                <input class="flex-1 text-sm text-[#03071266] font-normal p-3 rounded-xl" type="text" placeholder="Have any copupon?">
-                                <button class="btn text-[16px] text-white font-semibold bg-[#1DD100]">Apply</button>
+                            <div id="couponDiv" class="flex justify-between items-center bg-[#FFFFFF]">
+                                <input id="couponInput" class="flex-1 text-sm text-[#03071266] font-normal p-3 rounded-xl" type="text" placeholder="Have any copupon?">
+                                <button id="couponSubmit" class="btn text-[16px] text-white font-semibold bg-[#1DD100]">Apply</button>
+                            </div>
+
+                            <!-- Discount number from js -->
+                            <div id="discount-container" class="">
+
                             </div>
 
                             <!-- Grand total -->
                             <div class="flex justify-between items-center   py-3">
                                 <p class="text-[16px] font-medium text-[#030712]">Grand Total</p>
-                                <p class="text-[16px] font-medium text-[#030712]"> BDT <span> 0</span></p>
+                                <p class="text-[16px] font-medium text-[#030712]"> BDT <span id="grandTotal"> 0</span></p>
                             </div>
 
                         </div>

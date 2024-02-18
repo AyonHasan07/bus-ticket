@@ -144,7 +144,7 @@
                             <!-- seats lefts -->
                             <div class="flex gap-2 bg-[#1DD10026] p-3 rounded-xl">
                                 <img src="images/seat-green.png" alt="">
-                                <div class="inter font-medium text-[#1DD100] text-[18px] "> <span> 40</span> Seats left</div>
+                                <div class="inter font-medium text-[#1DD100] text-[18px] "> <span id="seatLeft"> </span> Seats left</div>
                             </div>
                         </div>
 
@@ -214,12 +214,12 @@
                     <div class="">
 
                         <!-- seat location -->
-                        <div class="flex justify-center items-center gap-12">
+                        <div id="seats" class="flex justify-center items-center gap-12">
                             <!-- seat row 1 -->
                             <div class=" grid grid-cols-3 gap-5">
                                 <span>A </span> 
-                                <button class="btn btn-sm">A1</button>
-                                <button class="btn btn-sm">A2</button>
+                                <button id="A1" class="btn btn-sm">A1</button>
+                                <button id="A2" class="btn btn-sm">A2</button>
     
                                 <span>B </span> 
                                 <button class="btn btn-sm">B1</button>
@@ -260,8 +260,8 @@
     
                             <!-- seat row 2 -->
                             <div class="grid grid-cols-2 gap-5">
-                                <button class="btn btn-sm">A3</button>
-                                <button class="btn btn-sm">A4</button>
+                                <button id="A3" class="btn btn-sm">A3</button>
+                                <button id="A4" class="btn btn-sm">A4</button>
     
                                 <button class="btn btn-sm">B3</button>
                                 <button class="btn btn-sm">B4</button>
@@ -311,14 +311,14 @@
                             </div>
 
                             <!-- seat number from js -->
-                            <div class="">
+                            <div id="seat-container" class="">
 
                             </div>
 
                             <!-- total price -->
                             <div class="flex justify-between items-center border-t  py-3">
                                 <p class="text-[16px] font-medium text-[#030712]">Total Price</p>
-                                <p class="text-[16px] font-medium text-[#030712]"> BDT <span> 0</span></p>
+                                <p class="text-[16px] font-medium text-[#030712]"> BDT <span id="totalPrice"> 0</span></p>
                             </div>
 
                             <!-- coupon -->
@@ -408,5 +408,6 @@
 
     </footer>
     
+    <script src="index.js"></script>
 </body>
 </html>

@@ -61,6 +61,9 @@ function finalBalance(){
             discountText(discount);
             hideThings();
         }
+        else{
+            alert('Enter a valid Coupon');
+        }
     
 
     }

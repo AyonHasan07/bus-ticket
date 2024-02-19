@@ -2,18 +2,18 @@ let seat = 40;
 let totalPrice = 0;
 let count = 0;
 
-
-
 document.getElementById('seats').addEventListener("click", seatBooking)
 
 function seatBooking(element){
     
 
     const seats = element.target.innerText;
-    console.log(seats);
+    
 
     // color
     setColorById(seats);
+
+    setDisable(seats);
 
     // addElement
     addElement(seats);
@@ -26,7 +26,7 @@ function seatBooking(element){
     
     totalPrice = totalPrice + 550;
     total(totalPrice);
-    // console.log(totalPrice);
+    
 
     grand(totalPrice);
 
@@ -34,8 +34,6 @@ function seatBooking(element){
         disableButton();
         // alert('you can book only 4 ticket');
     }
-
-    
 
 }
 
@@ -45,7 +43,6 @@ function finalBalance(){
     const coupon = document.getElementById('couponInput').value;
     const upperCoupon = coupon.toUpperCase();
     
-    // console.log(upperCoupon);
     if(totalPrice === 2200){
         if( upperCoupon === 'NEW15'){
             const discount = totalPrice * .15 ;
@@ -64,11 +61,7 @@ function finalBalance(){
         else{
             alert('Enter a valid Coupon');
         }
-    
-
     }
-    
-
 }
 
 // modal button section
@@ -168,7 +161,6 @@ function hideThings(){
 
 function disableButton(){
     const button = document.getElementsByClassName('btn-sm');
-    // console.log(button);
 
     for(const btn of button){
         btn.setAttribute('disabled', true);
@@ -176,9 +168,7 @@ function disableButton(){
 
 }
 
-
-// function removeAttribute(){
-//     const next = document.getElementById('nextButton');
-//     next.removeAttribute('disabled');
-// }
-
+function setDisable(element){
+    const item = document.getElementById(element);
+    item.setAttribute('disabled',true);
+}

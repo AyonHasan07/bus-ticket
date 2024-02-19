@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="w-10/12 mx-auto">
+    <header class="w-full lg:w-10/12 mx-auto">
         <nav class="raleway">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -61,7 +61,7 @@
         <section class="w-10/12 mx-auto my-14 raleway">
             <h1 class="text-center text-[#030712] font-bold"> Best offers for you</h1>
             
-            <div class="relative flex justify-center items-center gap-10 my-8 ">
+            <div class="relative flex flex-col lg:flex-row justify-center items-center gap-10 my-8 ">
                 <!-- 1st coupon -->
                 
                     <div class=" mx-auto bg-[#FFBF0F] flex justify-center items-center rounded-2xl  w-full  ">
@@ -118,7 +118,7 @@
 
         <section class="raleway bg-[#F7F8F8] py-10 border-t border-[#1DD100] rounded-[50px]">
             <!-- Route and tickets price -->
-            <div class="w-10/12 mx-auto">
+            <div class="w-full lg:w-10/12 mx-auto">
                 <!-- title -->
                 <div class=" my-10 w-4/6 mx-auto mb-10">
                     <h1 class="text-4xl font-bold text-center mb-3">Greenline Paribahan</h1>
@@ -126,10 +126,10 @@
                 </div>
 
                 <!-- ticket -->
-                <div class="flex justify-between items-center gap-6 p-6 rounded-3xl bg-[#FFFFFFFF]">
+                <div class="flex flex-col gap-5 lg:flex-row justify-between items-center gap-6 p-6 rounded-3xl bg-[#FFFFFFFF]">
                     <!-- bus -->
                     <div class="flex-1">
-                        <div class="flex justify-between items-center">
+                        <div class="flex flex-col gap-5 lg:flex-row justify-between items-center">
                             <div class="flex justify-center items-center gap-4">
                                 <!-- Bus Logo -->
                                 <div class="">
@@ -185,7 +185,7 @@
 
             <!-- seats and Form -->
 
-            <div id="seatAndForm" class="flex justify-center items-center gap-5 w-10/12 mx-auto bg-[#FFFFFFFF] my-10 p-6">
+            <div id="seatAndForm" class="flex flex-col lg:flex-row justify-center items-center gap-5 w-full lg:w-10/12 mx-auto bg-[#FFFFFFFF] my-10 p-6">
 
                 <!-- Seats -->
 
@@ -386,7 +386,7 @@
 
     <footer class="bg-[#030712] text-white inter ">
 
-        <div class="flex justify-between items-center w-10/12 mx-auto py-6 border-[#FFFFFF4D] border-b-2 border-dashed">
+        <div class="flex flex-col lg:flex-row justify-center gap-3 lg:justify-between items-center w-10/12 mx-auto py-6 border-[#FFFFFF4D] border-b-2 border-dashed">
             <div class="">
                 <h1 class="text-4xl font-extrabold raleway"> P-Ticket</h1>
                 <p class="text-xs"> P-Ticket is a digital platform to make your daily commuting better.</p>
@@ -421,7 +421,7 @@
     
     <script src="index.js"></script>
 
-    <!-- Put this part before </body> tag -->
+    <!-- Put this part before body tag -->
 <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 <div class="modal" role="dialog">
   <div class="modal-box flex flex-col justify-center items-center">

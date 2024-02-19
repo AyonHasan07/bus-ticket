@@ -53,7 +53,8 @@ function finalBalance(){
             new15(grandPrice);
             discountText(discount);
             hideThings();
-        }else if(upperCoupon === 'COUPLE 20' || upperCoupon === 'COUPLE20'){
+        }
+        else if(upperCoupon === 'COUPLE 20' || upperCoupon === 'COUPLE20'){
             const discount = totalPrice * .20 ;
             const grandPrice = totalPrice -discount;
             new15(grandPrice);
@@ -66,6 +67,21 @@ function finalBalance(){
     
 
 }
+
+// modal button section
+
+const phoneInput = document.getElementById('phoneInput');
+const nextButton = document.getElementById('nextButton');
+
+phoneInput.addEventListener("keyup",function(e){
+    
+    const phone  = e.target.value;
+    console.log( phone);
+
+    if( phone !== "" ){
+        nextButton.removeAttribute('disabled');
+    }
+})
 
 function grand(element){
     const grandTotal = document.getElementById('grandTotal');
@@ -159,6 +175,7 @@ function disableButton(){
 
 
 // function removeAttribute(){
-
+//     const next = document.getElementById('nextButton');
+//     next.removeAttribute('disabled');
 // }
 

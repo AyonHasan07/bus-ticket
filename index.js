@@ -1,5 +1,6 @@
 let seat = 40;
 let totalPrice = 0;
+let count = 0;
 
 
 
@@ -19,10 +20,20 @@ function seatBooking(element){
 
     seat-- ;
     seatLeft(seat);
+
+    count = count + 1;
+    document.getElementById('numberOfSeat').innerText = count;
     
     totalPrice = totalPrice + 550;
     total(totalPrice);
     // console.log(totalPrice);
+
+    grand(totalPrice);
+
+    if(count >= 4){
+        disableButton();
+        // alert('you can book only 4 ticket');
+    }
 
     
 
@@ -35,22 +46,30 @@ function finalBalance(){
     const upperCoupon = coupon.toUpperCase();
     
     // console.log(upperCoupon);
-    if( upperCoupon === 'NEW15'){
-        const discount = totalPrice * .15 ;
-        const grandPrice = totalPrice -discount;
-        new15(grandPrice);
-        discountText(discount);
-        hideThings();
+    if(totalPrice === 2200){
+        if( upperCoupon === 'NEW15'){
+            const discount = totalPrice * .15 ;
+            const grandPrice = totalPrice -discount;
+            new15(grandPrice);
+            discountText(discount);
+            hideThings();
+        }else if(upperCoupon === 'COUPLE 20' || upperCoupon === 'COUPLE20'){
+            const discount = totalPrice * .20 ;
+            const grandPrice = totalPrice -discount;
+            new15(grandPrice);
+            discountText(discount);
+            hideThings();
+        }
+    
 
     }
-    // else if(upperCoupon === 'couple20'){
-    //     const discount = totalPrice * .20 ;
-    //     const grandPrice = totalPrice -discount;
-    //     new15(grandPrice);
-    //     discountText(discount);
-    //     hideThings();
-    // }
+    
 
+}
+
+function grand(element){
+    const grandTotal = document.getElementById('grandTotal');
+    grandTotal.innerText = element;
 }
 
 function new15(element){
@@ -125,4 +144,21 @@ function hideThings(){
     hide.setAttribute('class', 'hidden');
 
 }
+
+
+
+function disableButton(){
+    const button = document.getElementsByClassName('btn-sm');
+    // console.log(button);
+
+    for(const btn of button){
+        btn.setAttribute('disabled', true);
+    }
+
+}
+
+
+// function removeAttribute(){
+
+// }
 
